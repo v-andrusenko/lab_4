@@ -22,11 +22,11 @@ namespace Lab_4_1
         }
         public void Information()
         {
-            Debug.WriteLine($"Имя: {this.Name}");
-            Debug.WriteLine($"Возраст: {this.Age}");
-            Debug.WriteLine($"Пол: {this.Gender}");
-            Debug.WriteLine($"Семейство: {this.Type}");
-            Debug.WriteLine($"Порода: {this.Breed}");
+            Debug.WriteLine($"Имя ({this.Name.GetType()}): {this.Name}");
+            Debug.WriteLine($"Возраст ({this.Age.GetType()}): {this.Age}");
+            Debug.WriteLine($"Пол ({this.Name.GetType()}): {this.Gender}");
+            Debug.WriteLine($"Семейство ({this.Type.GetType()}): {this.Type}");
+            Debug.WriteLine($"Порода ({this.Breed.GetType()}): {this.Breed}");
             Debug.WriteLine($"Класс: {GetType()}\n");
 
         }
